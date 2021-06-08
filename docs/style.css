@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+@media (min-width: 812px){
+  .flex-col{
+    display: flex;
+  flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 812px) and (orientation: portrait){
+  .flex-col{
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 812px) {
+  .flex-row{
+    display: flex;
+  flex-direction: row-reverse;
+  justify-content:space-between;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 812px) and (orientation: portrait){
+  .flex-row {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+.phright{
+  width: 50%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+}
+
+.mainphoto {
+  width: 100%;
+    height: auto;
+  border-radius: 100%;
+  border: 6px solid rgba(34, 31, 53, 0.712);
+}
+
+h1 { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5em;
+    font-weight: 700;
+    margin-top: 20vh;
+} 
+
+h2 {
+    position: relative;
+    font-family: 'Roboto' sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+  }
+
+  h3 {
+    position: relative;
+    font-family: 'Roboto' sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+  } 
+ 
+  ul {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+p {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+  }
+ 
+  .header {
+    position: relative;
+    min-height: 100vh;
+    padding: 8px 50px;
+    background-image: url("bg.jpg");
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header_title {
+    color: #fff;
+    align-self: center;
+  } 
+
+
+  .article {
+    position: relative;
+    min-height: 100vh;
+    padding: 8px 50px;
+  }
+
+  .article_first {
+    background-image: url("first_bg.jpg");
+  }
+
+  .form {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .form_input,
+.form_textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  transition: transform cubic-bezier(0.12, 0, 0.39, 0);
+  color: rgba(53, 45, 100, 0.295);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.form_input:focus,
+.form_textarea:focus {
+  transition: transform cubic-bezier(0.12, 0, 0.39, 0);
+  transform: scale(1.02, 1.02);
+}
+
+.form_button {
+    display: inline-block;
+    padding: 12px 32px;
+    transition: all cubic-bezier(0.12, 0, 0.39, 0);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(61, 92, 112, 0.753);
+    background-clip: border-box;
+    font-family: 'Roboto' sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .form_button:hover {
+    transition: all cubic-bezier(0.12, 0, 0.39, 0);
+    transform: scale(1.02, 1.02);
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 16px 2px;
+  }
+
+.column_white{
+  text-align: left;
+  position: relative;
+  margin-top: 15vh;
+  color:#fff;
+  font-size: 3em;
+}
+
+.white{
+  color: #fff;
+  text-align: center;
+  padding-top: 15vh;
+}
+
+.article_second {
+  background-image: url("second_bg.jpg");
+}
+
+.header,
+.article_first, 
+.article_second {
+  background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.little {
+  font-size: 2em;
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+
+.flex-col{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content:space-between;
+  
+}
+
+.follow {
+  display: flex;
+    flex-direction: column;
+}
+
+.col-flex-row {
+  display: flex;
+    min-height: 85vh;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.small-font {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.4em;
+}
